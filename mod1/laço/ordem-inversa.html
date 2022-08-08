@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem inversa</title>
+</head>
+
+<body>
+
+    <script>
+        //criar uma função que receba uma palavra aleatória como parâmetro e retorne ela invertida
+
+        //1- receber a palavra como parâmetro na função
+        //2- criar uma variável temporária para armazenar o resultado
+        //3- fazer um laço ao contrário
+        //4- retornar a variável temporária
+
+        function ordemInversa(palavra) {
+            var palavraInvertida = "";
+
+            for (i = palavra.length -1; i >= 0; i--) {
+                palavraInvertida += palavra[i];
+
+            }
+
+            return palavraInvertida;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  --white: #ffffff;
+  --gray-light: #dee2e6;
+  --gray-medium: #8d99ae;
+  --gray-dark: #2b2d42;
+  --blue: #4aaac7;
+  --linear-gray: linear-gradient(135deg, #dee2e6 0%, #b9bdc0 100%);
+  --linear-grape: linear-gradient(135deg, #7209b7 0%, #3f0466 100%);
+  --linear-lilac: linear-gradient(135deg, #9b5de5 0%, #7208f0 100%);
+  --linear-green: linear-gradient(135deg, #00f5d4 0%, #039c88 100%);
+  --linear-yellow: linear-gradient(135deg, #fee440 35.42%, #bea820 100%);
+  --linear-orange: linear-gradient(135deg, #ff7d00 0%, #c56202 100%);
+  --linear-red: linear-gradient(135deg, #d00000 0%, #a60101 100%);
+  --linear-wine: linear-gradient(135deg, #6a040f 0%, #310207 100%);
+}
+
+.background-site {
+  background-image: url(../images/background-site.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  min-height: 100%;
+}
+
+.content {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.title-imc {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--gray-dark);
+}
+
+.subtitle-imc {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--gray-medium);
+}
+
+.text-about-imc {
+  color: var(--gray-dark);
+}
+
+.label-input-imc {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.input-button-imc {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  color: var(--gray-dark);
+}
+
+.border-input-imc {
+  border: 0.08rem solid;
+}
+
+#button-calculate-imc {
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+}
+
+#button-calculate-imc:hover{
+  animation: pulse 1s ease;
+  filter: brightness(1.2);
+}
+
+.animation-card-in {
+  animation: flipInY 2s ease;
+}
+
+.animation-card-out {
+  animation: fadeIn 1s ease;
+}
+
+.card-imc {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+svg circle {
+  fill: var(--gray-light);
+}
+
+svg path {
+  fill: var(--gray-medium);
+}
+
+#label-informating {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-medium);
+}
+
+.card-result {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+label {
+  display: block !important;
+}
+
+button {
+  margin-top: 16px;
+  padding: 4px;
+}
+
+.result-text{
+  font-size: 2rem;
+}
+
+.background-gray {
+  background: var(--linear-gray) !important;
+}

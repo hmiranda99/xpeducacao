@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número divisível</title>
+</head>
+
+<body>
+
+    <script>
+        // verificar se um número é divisível por 3 ou 5
+        // caso seja, retornar 'true'
+        // caso não seja, retornar 'false'
+
+        function verificaDivisivel(numero) {
+
+            /*
+            if (numero % 3 === 0 || numero % 5 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+            */
+
+            return (numero % 3 === 0 || numero % 5 === 0);
+        }
+
+        function verificaIntervalo(inicial, final) {
+            var contador = 0;
+            var soma = 0;
+            var multiplicacao = 1;
+            var controle = inicial;
+
+            /*
+            while(controle <= final){
+
+                if(verificaDivisivel(controle)){
+                    console.log(controle);
+                    contador++;
+                    soma += controle;
+                    multiplicacao *= controle;
+                }
+                
+                controle = controle + 1;
+            }*/
+
+            for (var controle = inicial; controle <= final; controle++) {
+
+                if (verificaDivisivel(controle)) {
+                    console.log(controle);
+                    contador++;
+                    soma += controle;
+                    multiplicacao *= controle;
+                }
+
+            }
+
+            //console.log('Quantidade: ' + contador);
+            console.log(`Quantidade:  ${contador}`);
+            console.log('Soma : ' + soma);
+            console.log('Multiplicação: ' + multiplicacao);
+        }
+    </script>
+
+</body>
+
+</html>

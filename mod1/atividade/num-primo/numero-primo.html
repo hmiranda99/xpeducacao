@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Número primo</title>
+</head>
+
+<body>
+
+    <script>
+        function numeroPrimo(numero) {
+            let primo = 0;
+
+            if(isNaN(numero)){
+                return 'Somente números';
+            }
+            
+            for (let i = 0; i <= numero; i++) {
+                
+                const resto = numero % (i + 1);
+                
+                if (resto === 0) {
+                    primo += 1;
+                }
+            }
+    
+            const frase = 'O número ' + numero;
+
+            const resposta = primo === 2 ?  frase + ' é primo.' : frase + ' não é primo.';
+
+            return resposta;
+        }
+    </script>
+
+</body>
+
+</html>

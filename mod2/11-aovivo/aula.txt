@@ -1,0 +1,5 @@
+Função map para array
+- traz o resultado a função feita nos elementos do array
+
+Função filter
+- traz os elementos dependendo da condição

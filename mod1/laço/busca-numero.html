@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca número</title>
+</head>
+
+<body>
+
+    <script>
+        //1 - receber o número como parâmetro
+        //2- procurar com o laço na lista
+        //3- usar o break
+        //4- se não encontra retornar false
+
+        var lista = [4, 67, 99, 35, 84, 2, 13];
+
+        function verificaNumero(numero) {
+            var existe = false;
+
+            for (i = 0; i < lista.length; i++) {
+
+                if (lista[i] === numero) {
+                    existe = true;
+                    break;
+                }
+
+            }
+
+            return existe;
+        }
+    </script>
+
+</body>
+
+</html>

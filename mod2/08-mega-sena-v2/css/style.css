@@ -1,0 +1,136 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  --white: #ffffff;
+  --gray-light: #EFEFEF;
+  --gray-medium: #C5C5C5;
+  --gray-dark: #2b2d42;
+  --blue: #1C54F5;
+  --orange: #E15D13;
+  --green: #0EAD69;
+  --red: #D00000;
+}
+
+.background-site {
+  background-color: #0837BC;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: var(--white);
+  padding: 3rem 0;
+}
+
+.title-mega {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--gray-dark);
+  text-align: center;
+}
+
+label{
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+button:hover{
+  filter: brightness(1.2);
+}
+
+button:disabled{
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+}
+
+.numbers {
+  width: 50%;
+  padding: 10px;
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.number {
+  display: inline-table;
+  margin: 10px;
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  font-weight: 600;
+  width: 25px;
+  border-radius: 100%;
+  padding: 10px 12px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.selected-number {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+#megasena-buttons{
+  margin-bottom: 2rem;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.button-blue{
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.button-orange{
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.button-green{
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.button-red{
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.results-megasena{
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 912px) {
+  .resize {
+    display: grid;
+  }
+
+  .numbers{
+    width: 80%;
+  }
+}
